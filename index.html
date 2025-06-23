@@ -16,6 +16,40 @@
         .contact input, .contact textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #ccc; }
         .contact button { background: #0074d9; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
         footer { background: #222; color: #fff; text-align: center; padding: 15px 0; margin-top: 40px; }
+
+        @media (max-width: 900px) {
+            .featured-cars {
+                flex-direction: column;
+                align-items: center;
+            }
+            .car-card {
+                width: 80%;
+                max-width: 400px;
+            }
+        }
+        @media (max-width: 600px) {
+            header, footer {
+                padding: 10px 0;
+            }
+            .hero {
+                padding: 30px 10px;
+            }
+            .featured-cars {
+                gap: 10px;
+                margin: 20px 0;
+            }
+            .car-card {
+                padding: 12px;
+                font-size: 15px;
+            }
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+            .contact {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
